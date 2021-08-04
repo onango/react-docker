@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  web:
+    container_name: Example
+    build: 
+      context: .
+      target: dev
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    volumes:
+      - './example:/app/example'
+      - '/app/example/node_modules'
+    stdin_open: true
+    command: npm start
+    ports:
+      - '3000:3000'

@@ -1,0 +1,14 @@
+Dockerfile
+frontend/node_modules
+frontend/npm-debug.log
+frontend/build
+
+testui/node_modules
+testui/npm-debug.log
+testui/build
+.dockerignore
+
+node_modules
+
+
+
